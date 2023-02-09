@@ -1,0 +1,128 @@
+body {
+  background-color: #e4d2dd;
+}
+
+h1 {
+  display: block;
+  margin: 0 auto;
+}
+strong {
+  font-size: 19px;
+}
+.topic {
+  font-size: 45px;
+}
+
+#city {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: capitalize;
+}
+#ContainAll {
+  max-width: 600px;
+  margin: 30px auto;
+  color: #000000;
+  border: 3px solid rgba(197, 196, 196, 0.445);
+  border-radius: 10px;
+  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902023.jpg?w=996&t=st=1673515478~exp=1673516078~hmac=5d71df7ab905804bd7bcf3b0fed29002d191f7e70e7b1f2dd48f6f9255223e85");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1319px;
+  padding: 10px 10px 10px 10px;
+  font-family: monospace;
+  box-shadow: rgba(37, 39, 89, 0.482) 0px 8px 8px 0;
+  margin-bottom: 6px;
+}
+
+#sky {
+  text-transform: capitalize;
+}
+
+#detail {
+  max-width: 600px;
+  background-color: #da98c357;
+  padding: 10px 10px 10px 10px;
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 5px;
+}
+
+#forecast {
+  max-width: 600px;
+  background-color: #fbdad34a;
+  margin-top: 10px;
+  padding: 10px 10px 10px 10px;
+
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#deg {
+  font-size: 45px;
+  margin: -10px 2px -15px 10px;
+  padding-top: 100px;
+  position: relative;
+  top: 5px;
+  left: 1px;
+  padding-left: 10px;
+  padding-right: 2px;
+}
+
+.units {
+  font-size: medium;
+  position: relative;
+  top: -14px;
+  left: -3px;
+}
+
+.active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  color: rgb(33, 33, 33);
+}
+
+.form-control {
+  padding-right: 0;
+  height: 4.4vh;
+  width: 180px;
+}
+
+.firstButton {
+  box-shadow: rgba(37, 39, 89, 0.482) 0px 3px 5px 0;
+}
+
+.secondButton {
+  background-color: #2fb74d;
+  border-color: #2fb74d;
+  box-shadow: rgba(37, 39, 89, 0.482) 0px 3px 5px 0;
+}
+.secondButton:hover {
+  background-color: #25913d;
+  border-color: #25913d;
+}
+
+.sourceCode {
+  max-width: 600px;
+  padding-top: 4px;
+  padding-left: 5px;
+  font-size: 15px;
+  font-family: monospace;
+}
+
+.icon {
+  margin: -10px -10px -15px -10px;
+  width: 100px;
+}
+
+#currentTime {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+#details {
+  line-height: 21.5pt;
+}
