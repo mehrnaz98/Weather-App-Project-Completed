@@ -126,3 +126,11 @@ strong {
 #details {
   line-height: 21.5pt;
 }
+
+.weather-forecast-temperature-max {
+  font-size: 15px;
+}
+
+.weather-forecast-temperature-min {
+  font-size: 15px;
+}
