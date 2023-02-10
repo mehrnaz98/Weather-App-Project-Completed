@@ -209,4 +209,11 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature1);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature1);
 
-window.onload = currentPosition;
+//window.onload = currentPosition;
+function onLoading(event) {
+  event.preventDefault();
+  const city = document.getElementById("city").innerText;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e20e205e3f166da34e02121073321d9a&units=metric`;
+  axios.get(apiUrl).then(showTemperature);
+}
+window.onload = onLoading;
