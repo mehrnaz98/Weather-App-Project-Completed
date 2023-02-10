@@ -128,9 +128,14 @@ strong {
 }
 
 .weather-forecast-temperature-max {
-  font-size: 15px;
+  font-size: 13.5px;
 }
 
 .weather-forecast-temperature-min {
-  font-size: 15px;
+  color: rgb(108, 107, 107);
+  font-size: 13.5px;
+}
+
+#forecast {
+  text-align: center;
 }
