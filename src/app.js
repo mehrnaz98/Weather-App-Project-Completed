@@ -207,3 +207,5 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature1);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature1);
+
+window.onload = currentPosition();

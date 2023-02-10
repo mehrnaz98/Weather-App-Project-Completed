@@ -1,3 +1,7 @@
+@-ms-viewport {
+  width: device-width;
+}
+
 body {
   background-color: #e4d2dd;
 }
