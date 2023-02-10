@@ -74,14 +74,12 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
 function showTemperature(response) {
-  console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let weather = response.data.weather[0].description;
   let wind = Math.round(response.data.wind.speed);
@@ -115,8 +113,6 @@ function WeatherNews(event) {
 }
 
 function showPosition(position) {
-  console.log(`Latitude is ${position.coords.latitude}`);
-  console.log(`Longitude is ${position.coords.longitude}`);
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=e20e205e3f166da34e02121073321d9a&units=metric`;
   axios.get(`${apiUrl}`).then(showTemperature2);
 }
@@ -125,7 +121,6 @@ function currentPosition() {
 }
 
 function showTemperature2(response) {
-  console.log(response.data);
   let cityName = response.data.name;
   let cName = document.querySelector("#city");
   cName.innerHTML = `${cityName}`;
@@ -159,7 +154,6 @@ function displayCelsiusTemperature1(event) {
 }
 
 function displayCelsiusTemperature2(response) {
-  console.log(response.data);
   let cityName = response.data.name;
   let cName = document.querySelector("#city");
   let temperature = Math.round(response.data.main.temp);
@@ -177,7 +171,6 @@ function displayFahrenheitTemperature1(event) {
 }
 
 function displayFahrenheitTemperature2(response) {
-  console.log(response.data);
   let cityName = response.data.name;
   let cName = document.querySelector("#city");
   let temperature = Math.round(response.data.main.temp);
@@ -214,5 +207,3 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature1);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature1);
-
-window.onload = currentPosition();
